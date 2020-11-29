@@ -348,7 +348,7 @@
     margin-top: 58%;
     width: 100%;
   }
-  .menu__h2 {
+  .menu__h1 {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -404,8 +404,15 @@
   }
 
   .menufav {
-    margin-bottom: 142%;
-    margin-left: 13%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 1.7%;
+    font-size: 1.9rem;
+    color: rgba(0, 0, 0, 0.603);
+  }
+  .menufav:hover {
+    color: #9356DC;
+    transform: scale(1.01);
   }
 
   .footer__logo {

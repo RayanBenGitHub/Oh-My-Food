@@ -37,7 +37,7 @@ body{
     border-bottom-right-radius: 0px;
     margin-top: 58%;
     width: 100%;
-    &__h2{
+    &__h1{
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -68,8 +68,15 @@ body{
     float: right;
 }
 .menufav{
-    margin-bottom: 142%;
-    margin-left: 13%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 1.7%;
+    font-size: 1.9rem;
+    color: rgba(0, 0, 0, 0.603);
+    &:hover {
+        color: $color-primary;
+        transform: scale(1.01);
+    }
 }
 
 .footer__logo{
