@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@media all and (max-width: 414px) {
 header, body, footer {
   display: flex;
   flex-direction: column;
@@ -464,3 +464,4 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+}
