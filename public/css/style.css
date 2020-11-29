@@ -334,13 +334,9 @@
   }
 
   .main {
-    height: 100vh;
-    margin-top: 13%;
     background-image: url(./../../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
-    position: relative;
   }
 
   .menu {
@@ -349,15 +345,14 @@
     border-radius: 35px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    position: absolute;
-    top: 27%;
+    margin-top: 58%;
     width: 100%;
   }
-  .menu__h1 {
+  .menu__h2 {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .menu__h2 {
+  .menu__h3 {
     margin-left: 20px;
     margin-right: 20px;
     text-transform: capitalize;
@@ -412,12 +407,8 @@
   }
 
   .menufav {
-    left: 320px;
-    top: 33px;
-  }
-
-  .margintop {
-    margin-top: 154%;
+    margin-bottom: 142%;
+    margin-left: 13%;
   }
 
   .footer__logo {
@@ -442,14 +433,6 @@
     background-position-y: -95px;
   }
 
-  .menu2 {
-    top: 27%;
-  }
-
-  .margintop--2 {
-    margin-top: 175%;
-  }
-
   .main3 {
     background-image: url(./../../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   }
@@ -464,14 +447,6 @@
 
   .main4 {
     background-image: url(./../../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  }
-
-  .menu4 {
-    top: 25%;
-  }
-
-  .margintop--4 {
-    margin-top: 144%;
   }
 }
 
