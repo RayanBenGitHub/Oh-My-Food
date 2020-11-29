@@ -1,0 +1,97 @@
+.fa-arrow-left{
+    font-size: 1.5rem;
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: -90px;
+}
+.fixedheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: $color-fifth;
+    &__mainlogo{
+    position: relative;
+    padding: 10px;
+    }
+}
+.nomargin{
+    margin: 0%;
+}
+body{
+    margin: 0%;
+}
+
+.main{
+    height: 100vh;
+    margin-top: 13%;
+    background-image: url(./../../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+.menu{
+    background-color: lighten($color-fourth, 5%);
+    @include bordures(lighten($color-fourth, 5%));
+    border-radius: 35px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    top: 27%;
+    width: 100%;
+    &__h1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &__h2{
+        margin-left: 20px;
+        margin-right: 20px;
+        text-transform: capitalize;
+    }
+    &__btn{
+        @include menu_btn;
+        @include bordures($color-fifth);
+    }
+    &__order__btn{
+        @include bordures($color-secondary);
+        @include purple_btn;
+        width: 40%;
+        margin-top: 15%;
+        margin-bottom: 20%;
+        margin-left: 94px;
+        text-align: center;
+    }
+}
+.ingredients{
+    font-size: 0.9rem;
+}
+.prix{
+    float: right;
+}
+.menufav{
+    left: 320px;
+    top: 33px;
+    
+}
+.margintop{
+    margin-top: 154%;
+}
+.footer__logo{
+    width: 100px;
+}
+
+.footerlogo{
+width: 100%;
+}
+
+.fa-utensils {
+padding-right: 14px;
+}
+
+.fa-hands-helping{
+font-size: 0.8rem;
+padding-right: 10px;
+}

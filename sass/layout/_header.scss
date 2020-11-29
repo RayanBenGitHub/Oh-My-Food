@@ -1,0 +1,39 @@
+.heading {
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    &__mainlogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+    }
+    &__adress{
+        @include bordures(lighten($color-fourth, 5%));
+        border-top-color: $color-fourth;
+        border-top-width: 4px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: lighten($color-fourth, 5%);
+        font-weight: bold;
+        color: darken($color-fourth, 60%);
+    }
+    &__content{
+        background-color: lighten($color-fourth, 10%);
+        padding-bottom: 10%;
+        &__description{
+            color: darken($color-fourth, 45%)
+        }
+        &__btn{
+            @include bordures($color-secondary);
+            @include purple_btn;
+        }  
+    }
+}
+.main_logo{
+    width: 150px;
+    margin-left: 20px;
+}
+.fa-map-marker-alt{
+    margin-right: 15px;
+}

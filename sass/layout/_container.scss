@@ -1,0 +1,113 @@
+.bloc-page {
+    padding-top: 1rem;
+
+}
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 8%;
+    position: relative;
+    padding-left: 16px;
+    &__list{
+       &--choose{
+           @include bordures($color-fourth);
+           @include etapes_btn;
+           padding-left: 38px;
+       }
+       &--compose{
+           @include bordures($color-fourth);
+           @include etapes_btn; 
+           padding-left: 1rem;
+       }
+       &--taste{
+           @include bordures($color-fourth);
+           @include etapes_btn;
+       }
+    }
+}
+.circle {
+    @include bordures($color-primary);
+    border-radius: 50%;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 0.7rem;
+    background-color: $color-primary;
+    color: lighten($color-fourth, 8%);
+    position: absolute;
+    left: -10px;
+    
+}
+.options {
+    color: darken($color-fourth, 40%);
+    margin-left: -3rem;
+    margin-right: 1rem;  
+}
+
+.restaurants {
+    background-color: (lighten($color-fourth, 8%));
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    &__box{
+        &--r1{
+            @include bordures($color-fifth);
+            @include vignette;
+            position: relative;   
+        }
+        &--r2{
+            @include bordures($color-fifth);
+            @include vignette; 
+            position: relative;  
+            .photo_resto{
+                height: 84%;
+            } 
+        }
+        &--r3{
+            @include bordures($color-fifth);
+            @include vignette; 
+        }
+        &--r4{
+            @include bordures($color-fifth);
+            @include vignette;
+            .photo_resto{
+                height: 86%;
+            }
+        }
+    }
+}
+.photo_resto{
+    width: 100%;
+    margin-top: -7%;
+}
+.bold {
+    font-weight: 700;
+}
+figcaption{
+    padding-left: 10px;
+    padding-top: 5px;
+    position: relative;
+}
+.like {
+    position: absolute;
+    left: 268px;
+    bottom: 13px;
+    font-size: 25px;
+    color: rgb(95, 99, 99);
+    transform: scale(1);
+    transition: transform 500ms;
+    &:hover {
+        color: $color-primary;
+        transform: scale(1.01);
+    }
+}
+.nouveauté{
+    @include nouveau; 
+    position: absolute;
+    top: 13px;
+    left: 220px;
+}

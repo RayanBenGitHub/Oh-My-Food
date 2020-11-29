@@ -1,0 +1,39 @@
+@mixin bordures($color){
+    border: 1px solid $color;   
+}
+
+@mixin cercle($color){
+    border: 1px solid $color;
+    border-radius: 50%;
+}
+
+@mixin vignette{
+    border-radius: 5%;
+    background-color: $color-fifth;
+    box-shadow: 0px 2px 5px 1px rgba(205, 197, 197, 0.61);
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+    margin: 0%;
+    margin-bottom: 1rem;
+}   
+
+@mixin nouveau{
+    background-color: $color-third;
+    color: darken($color-third, 37%);
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;    
+}
+
+@mixin pied{
+    background-color: darken($color-fourth, $amount: 65);
+    color: $color-fifth;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8%;
+    padding-bottom: 4%;
+}

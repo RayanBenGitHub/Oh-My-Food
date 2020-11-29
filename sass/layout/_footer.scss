@@ -1,0 +1,16 @@
+.footer{
+    @include pied;
+    &__logo{
+        width: 100px;
+    }
+}
+.footerlogo{
+    width: 100%;
+}
+.fa-utensils {
+    padding-right: 14px;
+}
+.fa-hands-helping{
+    font-size: 0.8rem;
+    padding-right: 10px;
+}
