@@ -55,41 +55,37 @@
     
     &__box{
         &--r1{
-            @include bordures($color-fifth);
             @include vignette;
             position: relative;   
         }
         &--r2{
-            @include bordures($color-fifth);
             @include vignette; 
             position: relative;  
-            .photo_resto{
-                height: 84%;
-            } 
         }
         &--r3{
-            @include bordures($color-fifth);
             @include vignette; 
         }
         &--r4{
-            @include bordures($color-fifth);
             @include vignette;
-            .photo_resto{
-                height: 86%;
-            }
         }
     }
 }
 .photo_resto{
     width: 100%;
-    margin-top: -7%;
+}
+.lien-vignette{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
 }
 .bold {
     font-weight: 700;
 }
 figcaption{
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-left: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     position: relative;
 }
 .like {
@@ -110,5 +106,5 @@ figcaption{
     @include nouveau; 
     position: absolute;
     top: 5%;
-    left: 67%;
+    left: 70%;
 }

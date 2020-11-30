@@ -2,19 +2,21 @@
     font-size: 1.5rem;
     color: black;
     position: absolute;
-    top: 20%;
-    left: -55%;
+    top: 32%;
 }
 .fixedheading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     width: 100%;
     background-color: $color-fifth;
-    &__mainlogo{
+    &__maintitle{
     position: relative;
-    padding: 10px;
+    padding: 2%;
+    }
+    .main-title{
+        @include Shrikhand;
+        margin-block: 0%;
+        text-align: center;
+        font-size: 1.8rem;
     }
 }
 .nomargin{
@@ -37,18 +39,28 @@ body{
     border-bottom-right-radius: 0px;
     margin-top: 58%;
     width: 100%;
-    &__h1{
-        margin-left: 20px;
-        margin-right: 20px;
+    &__h2{
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 8%;
+        @include Shrikhand;
+        
     }
     &__h3{
-        margin-left: 20px;
-        margin-right: 20px;
-        text-transform: capitalize;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 5%;
+        padding-bottom: 1%;
+        text-transform: uppercase;
+        border-bottom: 3px solid $color-third;
+        border-bottom-width: 10%;
+        width: 10%;
+        font-size: 1rem;
     }
     &__btn{
         @include menu_btn;
         @include bordures($color-fifth);
+        padding-left: 3%;
     }
     &__order__btn{
         @include bordures($color-secondary);
@@ -61,17 +73,21 @@ body{
         font-size: 1rem;
     }
 }
+.plat{
+    font-size: 1.1rem;
+}
 .ingredients{
     font-size: 0.9rem;
+    width: 70%;
 }
 .prix{
     float: right;
+    padding-right: 4%;
 }
 .menufav{
     float: right;
     margin-right: 3%;
-    margin-top: 1.7%;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: rgba(0, 0, 0, 0.603);
     &:hover {
         color: $color-primary;
@@ -79,19 +95,11 @@ body{
     }
 }
 
-.footer__logo{
-    width: 100px;
-}
-
-.footerlogo{
-width: 100%;
-}
-
 .fa-utensils {
-padding-right: 14px;
+padding-right: 4%;
 }
 
 .fa-hands-helping{
 font-size: 0.8rem;
-padding-right: 10px;
+padding-right: 3%;
 }

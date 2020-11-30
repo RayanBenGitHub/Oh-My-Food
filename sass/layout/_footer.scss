@@ -1,16 +1,15 @@
 .footer{
     @include pied;
-    &__logo{
-        width: 100px;
+    &__title{
+        @include Shrikhand;
+        margin-block: 0%;
+        font-size: 1.2rem;
     }
 }
-.footerlogo{
-    width: 100%;
-}
 .fa-utensils {
-    padding-right: 14px;
+    padding-right: 4%;
 }
 .fa-hands-helping{
     font-size: 0.8rem;
-    padding-right: 10px;
+    padding-right: 3%;
 }
