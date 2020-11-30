@@ -9,6 +9,9 @@
     padding-bottom: 8%;
     position: relative;
     padding-left: 16px;
+    &__title{
+        padding-left: 1%;
+    }
     &__list{
        &--choose{
            @include bordures($color-fourth);
