@@ -2,7 +2,8 @@
     font-size: 1.5rem;
     color: black;
     position: absolute;
-    top: 32%;
+    top: 27%;
+    left: 5%;
 }
 .fixedheading{
     position: fixed;
@@ -10,7 +11,7 @@
     background-color: $color-fifth;
     &__maintitle{
     position: relative;
-    padding: 2%;
+    padding: 1%;
     }
     .main-title{
         @include Shrikhand;
