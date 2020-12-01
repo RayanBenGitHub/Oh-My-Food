@@ -1,27 +1,41 @@
-.bloc-page {
-    padding-top: 5%;
-    font-family: $text_font;
-}
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding-bottom: 8%;
     position: relative;
-    padding-left: 16px;
+    padding-left: 6%;
+    padding-top: 4%;
+    @media all and (min-width: 600px){
+        background-image: url(./../../images/leaves-336694_1920.jpg);
+        background-size: cover;
+        padding-left: 0%;
+        align-items: center;
+        padding-bottom: 5%;
+                }
     &__title{
-        padding-left: 1%;
+        @media all and (min-width: 600px){
+            font-size: 2rem;
+            text-shadow: 3px 4px 2px darken($color-primary, 40%);
+            color: $color-fifth;
+        }
     }
     &__list{
        &--choose{
            @include bordures($color-fourth);
            @include etapes_btn;
-           padding-left: 38px;
+           .options{
+               margin-left: -11%;
+           }
+           @media all and (min-width: 600px){
+               .options{
+                   margin-left: -16%;
+                   margin-right: 7%;
+               }
+           }
        }
        &--compose{
            @include bordures($color-fourth);
            @include etapes_btn; 
-           padding-left: 1rem;
        }
        &--taste{
            @include bordures($color-fourth);
@@ -30,10 +44,11 @@
     }
 }
 .circle {
-    @include bordures($color-primary);
+    @include bordures ($color-primary);
     border-radius: 50%;
+    text-align: center;
     padding-top: 0.05rem;
-    padding-bottom: 0.05rem;
+    padding-bottom: 0.04rem;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     font-size: 0.7rem;
@@ -41,7 +56,10 @@
     color: lighten($color-fourth, 8%);
     position: absolute;
     left: -10px;
-    
+    @media all and (min-width: 600px){
+    @include bordures (darken($color-primary, 40%));
+    background-color: darken($color-primary, 40%);
+    }
 }
 .options {
     color: darken($color-fourth, 40%);
@@ -53,9 +71,23 @@
     background-color: (lighten($color-fourth, 8%));
     padding-top: 1rem;
     padding-bottom: 3rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+    padding-left: 6%;
+    padding-right: 6%;
+    @media all and (min-width: 600px){
+        background-image: url(./../../images/wood-591631_1920.jpg);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        }
+    &__title{
+        @media all and (min-width: 600px){
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: 3px 3px 1px darken($color-primary, 40%);
+            color: $color-fifth;
+            margin-bottom: 5%;
+        }
+    }    
     &__box{
         &--r1{
             @include vignette;
@@ -64,12 +96,23 @@
         &--r2{
             @include vignette; 
             position: relative;  
+            @media all and (min-width: 600px){
+                margin-left: 50%;
+            }
+            .lien-vignette{
+                @media all and (min-width: 600px){
+                    height: 320px;
+                }  
+            }
         }
         &--r3{
             @include vignette; 
         }
         &--r4{
             @include vignette;
+            @media all and (min-width: 600px){
+                margin-left: 50%;
+            }
         }
     }
 }
@@ -80,7 +123,9 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    height: 200px;
+    @media all and (max-width: 599px){
+    height: 200px
+    }
 }
 .bold {
     font-weight: 700;
@@ -109,5 +154,13 @@ figcaption{
     @include nouveau; 
     position: absolute;
     top: 5%;
-    left: 70%;
+    left: 68%;
 }
+/*
+#resto_flex {
+     @media all and (min-width: 600px){
+    display: flex;
+    justify-content: space-around;
+    }
+}
+*/
