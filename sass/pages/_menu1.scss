@@ -97,9 +97,15 @@ body{
 
 .fa-utensils {
 padding-right: 4%;
+@media all and (min-width: 600px){
+    padding-right: 1%;
+}
 }
 
 .fa-hands-helping{
 font-size: 0.8rem;
 padding-right: 3%;
+@media all and (min-width: 600px){
+    padding-right: 2%;
+}
 }

@@ -630,10 +630,20 @@ body {
 .fa-utensils {
   padding-right: 4%;
 }
+@media all and (min-width: 600px) {
+  .fa-utensils {
+    padding-right: 1%;
+  }
+}
 
 .fa-hands-helping {
   font-size: 0.8rem;
   padding-right: 3%;
+}
+@media all and (min-width: 600px) {
+  .fa-hands-helping {
+    padding-right: 2%;
+  }
 }
 
 .main2 {
