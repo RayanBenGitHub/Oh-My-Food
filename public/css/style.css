@@ -60,7 +60,7 @@ header, body, footer {
 }
 @media all and (min-width: 600px) {
   .heading__content__description {
-    padding-bottom: 3%;
+    padding-bottom: 5%;
   }
 }
 .heading__content__btn {
