@@ -43,8 +43,25 @@ header, body, footer {
   padding-left: 12%;
   padding-right: 12%;
 }
+@media all and (min-width: 600px) {
+  .heading__content {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 5%;
+    background-image: url(./../../images/chef-1417239_1280.png);
+    background-size: 51%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 107%;
+  }
+}
 .heading__content__description {
   color: #686868;
+}
+@media all and (min-width: 600px) {
+  .heading__content__description {
+    padding-bottom: 3%;
+  }
 }
 .heading__content__btn {
   border: 1px solid #FF79DA;
@@ -100,6 +117,7 @@ header, body, footer {
     padding-left: 0%;
     align-items: center;
     padding-bottom: 5%;
+    margin-bottom: 15%;
   }
 }
 @media all and (min-width: 600px) {
