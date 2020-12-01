@@ -7,15 +7,21 @@
     }
     @media all and (min-width: 600px){
         padding: 0%;
-        padding-top: 2%;
-        height: 10%;
+        padding-top: 1%;
+        font-size: 0.9rem;
         text-align: center;
     }
 }
 .fa-utensils {
     padding-right: 4%;
+    @media all and (min-width: 600px){
+        padding-right: 1%;
+    }
 }
 .fa-hands-helping{
     font-size: 0.8rem;
     padding-right: 3%;
+    @media all and (min-width: 600px){
+        padding-right: 2%;
+    }
 }

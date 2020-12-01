@@ -473,8 +473,8 @@ figcaption {
 @media all and (min-width: 600px) {
   .footer {
     padding: 0%;
-    padding-top: 2%;
-    height: 10%;
+    padding-top: 1%;
+    font-size: 0.9rem;
     text-align: center;
   }
 }
@@ -482,10 +482,20 @@ figcaption {
 .fa-utensils {
   padding-right: 4%;
 }
+@media all and (min-width: 600px) {
+  .fa-utensils {
+    padding-right: 1%;
+  }
+}
 
 .fa-hands-helping {
   font-size: 0.8rem;
   padding-right: 3%;
+}
+@media all and (min-width: 600px) {
+  .fa-hands-helping {
+    padding-right: 2%;
+  }
 }
 
 .bloc-page {
