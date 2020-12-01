@@ -312,7 +312,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .restaurants__box--r1 {
     height: 420px;
-    width: 50%;
+    width: 500px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
   }
 }
@@ -329,7 +329,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .restaurants__box--r2 {
     height: 420px;
-    width: 50%;
+    width: 500px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
   }
 }
@@ -355,7 +355,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .restaurants__box--r3 {
     height: 420px;
-    width: 50%;
+    width: 500px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
   }
 }
@@ -371,7 +371,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .restaurants__box--r4 {
     height: 420px;
-    width: 50%;
+    width: 500px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
   }
 }
