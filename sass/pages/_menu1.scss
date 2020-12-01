@@ -11,7 +11,6 @@
     background-color: $color-fifth;
     &__maintitle{
     position: relative;
-    padding: 1%;
     }
     .main-title{
         @include Shrikhand;
@@ -45,6 +44,7 @@ body{
         margin-right: 4%;
         margin-top: 8%;
         @include Shrikhand;
+        font-size: 1.8rem;
         
     }
     &__h3{
@@ -86,9 +86,8 @@ body{
     padding-right: 4%;
 }
 .menufav{
-    float: right;
-    margin-right: 3%;
-    font-size: 1.7rem;
+    margin-left: 7%;
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.603);
     &:hover {
         color: $color-primary;

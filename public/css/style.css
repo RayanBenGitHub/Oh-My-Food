@@ -310,7 +310,6 @@
   }
   .fixedheading__maintitle {
     position: relative;
-    padding: 1%;
   }
   .fixedheading .main-title {
     font-family: "Shrikhand", cursive;
@@ -347,6 +346,7 @@
     margin-right: 4%;
     margin-top: 8%;
     font-family: "Shrikhand", cursive;
+    font-size: 1.8rem;
   }
   .menu__h3 {
     margin-left: 4%;
@@ -410,9 +410,8 @@
   }
 
   .menufav {
-    float: right;
-    margin-right: 3%;
-    font-size: 1.7rem;
+    margin-left: 7%;
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.603);
   }
   .menufav:hover {
