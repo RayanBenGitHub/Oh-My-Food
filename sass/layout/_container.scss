@@ -145,11 +145,11 @@ figcaption{
     color: rgb(95, 99, 99);
     transform: scale(1);
     transition: transform 500ms;
+    cursor: pointer;
     &:hover {
         color: $color-primary;
         transform: scale(1.01);
     }
-
 }
 .nouveauté{
     @include nouveau; 

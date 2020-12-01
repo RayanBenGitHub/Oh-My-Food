@@ -79,6 +79,7 @@ header, body, footer {
 .heading__content__btn:hover {
   transform: scale(1.15);
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
+  cursor: pointer;
 }
 @media all and (min-width: 600px) {
   .heading__content__btn {
@@ -149,6 +150,7 @@ header, body, footer {
     padding-left: 3%;
     padding-right: 0%;
     box-shadow: 0px 2px 2px 1px #301255;
+    cursor: pointer;
   }
 }
 .fonctionnement__list--choose:hover {
@@ -163,6 +165,7 @@ header, body, footer {
 }
 .fonctionnement__list--choose:hover .options {
   color: #9356DC;
+  cursor: pointer;
 }
 .fonctionnement__list--choose .options {
   margin-left: -11%;
@@ -195,6 +198,7 @@ header, body, footer {
     padding-left: 3%;
     padding-right: 0%;
     box-shadow: 0px 2px 2px 1px #301255;
+    cursor: pointer;
   }
 }
 .fonctionnement__list--compose:hover {
@@ -209,6 +213,7 @@ header, body, footer {
 }
 .fonctionnement__list--compose:hover .options {
   color: #9356DC;
+  cursor: pointer;
 }
 .fonctionnement__list--taste {
   border: 1px solid #dbdbdb;
@@ -232,6 +237,7 @@ header, body, footer {
     padding-left: 3%;
     padding-right: 0%;
     box-shadow: 0px 2px 2px 1px #301255;
+    cursor: pointer;
   }
 }
 .fonctionnement__list--taste:hover {
@@ -246,6 +252,7 @@ header, body, footer {
 }
 .fonctionnement__list--taste:hover .options {
   color: #9356DC;
+  cursor: pointer;
 }
 
 .circle {
@@ -415,6 +422,7 @@ figcaption {
   color: #5f6363;
   transform: scale(1);
   transition: transform 500ms;
+  cursor: pointer;
 }
 .like:hover {
   color: #9356DC;
@@ -489,7 +497,7 @@ figcaption {
   color: black;
   position: absolute;
   top: 27%;
-  left: 5%;
+  left: 10px;
 }
 
 .fixedheading {
@@ -556,6 +564,7 @@ body {
   padding: 2%;
   margin-left: 3%;
   margin-right: 3%;
+  cursor: pointer;
   border: 1px solid #fff;
   padding-left: 3%;
 }
@@ -581,6 +590,7 @@ body {
 .menu__order__btn:hover {
   transform: scale(1.15);
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
+  cursor: pointer;
 }
 
 .plat {
