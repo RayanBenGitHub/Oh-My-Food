@@ -46,3 +46,11 @@
     padding-bottom: 4%;
 }
 
+@keyframes déroulement {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}

@@ -7,3 +7,9 @@ background-image: url(./../../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 .margintop--3{
     margin-top: 144%;
 }
+.menu__width{
+    @media all and (min-width: 600px){
+    width: 60%;
+    margin-left: 19%;
+}
+}

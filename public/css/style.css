@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes déroulement {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
 header, body, footer {
   display: flex;
   flex-direction: column;
@@ -79,7 +87,6 @@ header, body, footer {
 .heading__content__btn:hover {
   transform: scale(1.15);
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
-  cursor: pointer;
 }
 @media all and (min-width: 600px) {
   .heading__content__btn {
@@ -594,11 +601,23 @@ body {
   box-shadow: 0px 2px 5px 1px rgba(14, 12, 12, 0.2);
   background-color: #fff;
   margin-bottom: 4%;
-  padding: 2%;
   margin-left: 3%;
   margin-right: 3%;
-  border: 1px solid #fff;
+  overflow: hidden;
   padding-left: 3%;
+  display: flex;
+  justify-content: flex-start;
+}
+.menu__btn:hover + .checked-btn {
+  transform: scaleX(1);
+}
+.menu__btn__details {
+  flex-direction: column;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 2%;
+  padding-left: 0%;
 }
 .menu__order__btn {
   border: 1px solid #FF79DA;
@@ -622,7 +641,6 @@ body {
 .menu__order__btn:hover {
   transform: scale(1.15);
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
-  cursor: pointer;
 }
 @media all and (min-width: 600px) {
   .menu__order__btn {
@@ -663,6 +681,28 @@ body {
   transform: scale(1.01);
 }
 
+.checked-btn {
+  width: 0%;
+  background-color: #99E2D0;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 1000ms;
+}
+
+.fa-check-circle {
+  color: #99E2D0;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
 .fa-utensils {
   padding-right: 4%;
 }
@@ -687,6 +727,13 @@ body {
   background-position-y: -95px;
 }
 
+@media all and (min-width: 600px) {
+  .menu__width {
+    width: 60%;
+    margin-left: 19%;
+  }
+}
+
 .main3 {
   background-image: url(./../../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
@@ -699,8 +746,22 @@ body {
   margin-top: 144%;
 }
 
+@media all and (min-width: 600px) {
+  .menu__width {
+    width: 60%;
+    margin-left: 19%;
+  }
+}
+
 .main4 {
   background-image: url(./../../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+@media all and (min-width: 600px) {
+  .menu__width {
+    width: 60%;
+    margin-left: 19%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

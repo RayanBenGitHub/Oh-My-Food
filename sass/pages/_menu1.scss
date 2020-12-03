@@ -81,8 +81,22 @@ body{
     }
     &__btn{
         @include menu_btn;
-        @include bordures($color-fifth);
         padding-left: 3%;
+        display: flex;
+        justify-content: flex-start;
+        &:hover {
+            & + .checked-btn {
+                transform: scaleX(1);
+            }
+        }
+        &__details{
+            flex-direction: column;
+            width: 100%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding: 2%;
+            padding-left: 0%;
+        }
     }
     &__order__btn{
         @include bordures($color-secondary);
@@ -125,18 +139,28 @@ body{
         transform: scale(1.01);
     }
 }
-
-.fa-utensils {
-padding-right: 4%;
-@media all and (min-width: 600px){
-    padding-right: 1%;
+.checked-btn{
+    @include checked_btn;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 1000ms; 
 }
+.fa-check-circle{
+    color: $color-third;
+    background-color: $color-fifth;
+    border-radius: 50%;
+}
+.fa-utensils {
+    padding-right: 4%;
+    @media all and (min-width: 600px){
+    padding-right: 1%;
+    }
 }
 
 .fa-hands-helping{
-font-size: 0.8rem;
-padding-right: 3%;
-@media all and (min-width: 600px){
+    font-size: 0.8rem;
+    padding-right: 3%;
+    @media all and (min-width: 600px){
     padding-right: 2%;
-}
+    }
 }
