@@ -79,6 +79,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        padding-left: 25%;
         }
     &__title{
         @media all and (min-width: 600px){
@@ -98,11 +99,11 @@
             @include vignette; 
             position: relative;  
             @media all and (min-width: 600px){
-                margin-left: 50%;
+                margin-left: 25%;
             }
             .lien-vignette{
                 @media all and (min-width: 600px){
-                    height: 320px;
+                    height: 360px;
                 }  
             }
         }
@@ -112,7 +113,8 @@
         &--r4{
             @include vignette;
             @media all and (min-width: 600px){
-                margin-left: 50%;
+                margin-left: 25%;
+                height: 460px;
             }
         }
     }

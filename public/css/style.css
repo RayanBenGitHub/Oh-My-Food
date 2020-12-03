@@ -89,6 +89,11 @@ header, body, footer {
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
 }
 @media all and (min-width: 600px) {
+  .heading__content__btn:hover {
+    cursor: pointer;
+  }
+}
+@media all and (min-width: 600px) {
   .heading__content__btn {
     margin-top: 7%;
   }
@@ -167,6 +172,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .fonctionnement__list--choose:hover {
     box-shadow: 0px 4px 5px 1px #18092a;
+    cursor: pointer;
   }
 }
 .fonctionnement__list--choose:hover .options {
@@ -213,6 +219,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .fonctionnement__list--compose:hover {
     box-shadow: 0px 4px 5px 1px #18092a;
+    cursor: pointer;
   }
 }
 .fonctionnement__list--compose:hover .options {
@@ -250,6 +257,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .fonctionnement__list--taste:hover {
     box-shadow: 0px 4px 5px 1px #18092a;
+    cursor: pointer;
   }
 }
 .fonctionnement__list--taste:hover .options {
@@ -296,6 +304,7 @@ header, body, footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding-left: 25%;
   }
 }
 @media all and (min-width: 600px) {
@@ -319,9 +328,10 @@ header, body, footer {
 }
 @media all and (min-width: 600px) {
   .restaurants__box--r1 {
-    height: 420px;
-    width: 500px;
+    height: 450px;
+    width: 550px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
+    margin-bottom: 6%;
   }
 }
 .restaurants__box--r2 {
@@ -336,19 +346,20 @@ header, body, footer {
 }
 @media all and (min-width: 600px) {
   .restaurants__box--r2 {
-    height: 420px;
-    width: 500px;
+    height: 450px;
+    width: 550px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
+    margin-bottom: 6%;
   }
 }
 @media all and (min-width: 600px) {
   .restaurants__box--r2 {
-    margin-left: 50%;
+    margin-left: 25%;
   }
 }
 @media all and (min-width: 600px) {
   .restaurants__box--r2 .lien-vignette {
-    height: 320px;
+    height: 360px;
   }
 }
 .restaurants__box--r3 {
@@ -362,9 +373,10 @@ header, body, footer {
 }
 @media all and (min-width: 600px) {
   .restaurants__box--r3 {
-    height: 420px;
-    width: 500px;
+    height: 450px;
+    width: 550px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
+    margin-bottom: 6%;
   }
 }
 .restaurants__box--r4 {
@@ -378,14 +390,16 @@ header, body, footer {
 }
 @media all and (min-width: 600px) {
   .restaurants__box--r4 {
-    height: 420px;
-    width: 500px;
+    height: 450px;
+    width: 550px;
     box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
+    margin-bottom: 6%;
   }
 }
 @media all and (min-width: 600px) {
   .restaurants__box--r4 {
-    margin-left: 50%;
+    margin-left: 25%;
+    height: 460px;
   }
 }
 
@@ -647,6 +661,11 @@ body {
 .menu__order__btn:hover {
   transform: scale(1.15);
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
+}
+@media all and (min-width: 600px) {
+  .menu__order__btn:hover {
+    cursor: pointer;
+  }
 }
 @media all and (min-width: 600px) {
   .menu__order__btn {
