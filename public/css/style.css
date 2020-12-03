@@ -314,6 +314,7 @@ header, body, footer {
     text-shadow: 3px 3px 1px #301255;
     color: #fff;
     margin-bottom: 5%;
+    margin-left: -25%;
   }
 }
 .restaurants__box--r1 {
