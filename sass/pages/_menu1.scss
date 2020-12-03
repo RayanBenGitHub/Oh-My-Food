@@ -111,9 +111,15 @@ body{
     padding-right: 4%;
 }
 .menufav{
-    margin-left: 7%;
+    float: right;
+    margin-top: 2.5%;
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.603);
+    @media all and (min-width: 600px){
+        margin-top: 0%;
+        margin-left: 7%;
+        float: none;
+    }
     &:hover {
         color: $color-primary;
         transform: scale(1.01);

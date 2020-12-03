@@ -646,9 +646,17 @@ body {
 }
 
 .menufav {
-  margin-left: 7%;
+  float: right;
+  margin-top: 2.5%;
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.603);
+}
+@media all and (min-width: 600px) {
+  .menufav {
+    margin-top: 0%;
+    margin-left: 7%;
+    float: none;
+  }
 }
 .menufav:hover {
   color: #9356DC;
