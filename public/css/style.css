@@ -541,7 +541,10 @@ body {
 }
 @media all and (min-width: 600px) {
   .main {
-    background-position-y: -35%;
+    background-position-x: 50%;
+    background-size: 35%;
+    background-color: #7b3838;
+    background-position-y: 0%;
   }
 }
 
@@ -557,6 +560,7 @@ body {
 @media all and (min-width: 600px) {
   .menu {
     margin-top: 20%;
+    /*background-image: url(./../../images/mesh-2697072_1280.png);*/
   }
 }
 .menu__h2 {
@@ -646,6 +650,8 @@ body {
   .menu__order__btn {
     height: 5%;
     font-size: 1.5rem;
+    background-color: #7b3838;
+    border: 0;
   }
 }
 
@@ -727,13 +733,6 @@ body {
   background-position-y: -95px;
 }
 
-@media all and (min-width: 600px) {
-  .menu__width {
-    width: 60%;
-    margin-left: 19%;
-  }
-}
-
 .main3 {
   background-image: url(./../../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
@@ -746,22 +745,8 @@ body {
   margin-top: 144%;
 }
 
-@media all and (min-width: 600px) {
-  .menu__width {
-    width: 60%;
-    margin-left: 19%;
-  }
-}
-
 .main4 {
   background-image: url(./../../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-
-@media all and (min-width: 600px) {
-  .menu__width {
-    width: 60%;
-    margin-left: 19%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

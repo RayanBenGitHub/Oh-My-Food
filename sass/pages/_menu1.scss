@@ -31,8 +31,10 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     @media all and (min-width: 600px){
-        background-position-y: -35%;
-        
+        background-position-x: 50%;
+        background-size: 35%;
+        background-color: #7b3838;
+        background-position-y: 0%;
     }
 }
 .menu{
@@ -45,6 +47,7 @@ body{
     width: 100%;
     @media all and (min-width: 600px){
         margin-top: 20%;
+        /*background-image: url(./../../images/mesh-2697072_1280.png);*/
     }
     &__h2{
         margin-left: 4%;
@@ -87,7 +90,7 @@ body{
         &:hover {
             & + .checked-btn {
                 transform: scaleX(1);
-            }
+                }
         }
         &__details{
             flex-direction: column;
@@ -110,6 +113,8 @@ body{
         @media all and (min-width: 600px){
             height: 5%;
             font-size: 1.5rem;
+            background-color: #7b3838;
+            border: 0;
         }
     }
 }
