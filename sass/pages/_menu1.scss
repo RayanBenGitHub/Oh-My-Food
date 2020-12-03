@@ -28,7 +28,8 @@ body{
 
 .main{
     background-image: url(./../../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    background-size: contain;
+    background-position: top;
+    background-size: 131%;
     background-repeat: no-repeat;
     @media all and (min-width: 600px){
         background-position-x: 50%;
@@ -43,7 +44,7 @@ body{
     border-radius: 35px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin-top: 58%;
+    margin-top: 80%;
     width: 100%;
     @media all and (min-width: 600px){
         margin-top: 20%;
