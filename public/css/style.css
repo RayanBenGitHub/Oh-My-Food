@@ -42,6 +42,11 @@ header, body, footer {
   font-size: 0.9rem;
   width: 100%;
 }
+@media all and (min-width: 600px) {
+  .heading__adress {
+    padding-left: 2%;
+  }
+}
 .heading__content {
   display: flex;
   flex-direction: column;
@@ -443,6 +448,7 @@ figcaption {
 .like:hover {
   color: #9356DC;
   transform: scale(1.01);
+  font-weight: 700;
 }
 
 .nouveauté {
@@ -708,6 +714,7 @@ body {
 .menufav:hover {
   color: #9356DC;
   transform: scale(1.01);
+  font-weight: 700;
 }
 
 .checked-btn {
@@ -747,7 +754,7 @@ body {
 }
 @media all and (min-width: 600px) {
   .fa-hands-helping {
-    padding-right: 2%;
+    padding-right: 1%;
   }
 }
 

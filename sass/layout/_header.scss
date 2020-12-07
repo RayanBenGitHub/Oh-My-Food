@@ -18,6 +18,9 @@
         color: darken($color-fourth, 60%);
         font-size: 0.9rem;
         width: 100%;
+        @media all and (min-width: 600px){
+            padding-left: 2%;
+        }
     }
     &__content{
         display: flex;

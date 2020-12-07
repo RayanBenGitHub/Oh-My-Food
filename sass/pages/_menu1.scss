@@ -144,6 +144,7 @@ body{
     &:hover {
         color: $color-primary;
         transform: scale(1.01);
+        font-weight: 700;
     }
 }
 .checked-btn{
@@ -168,6 +169,6 @@ body{
     font-size: 0.8rem;
     padding-right: 3%;
     @media all and (min-width: 600px){
-    padding-right: 2%;
+    padding-right: 1%;
     }
 }
