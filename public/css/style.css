@@ -45,6 +45,7 @@ header, body, footer {
 @media all and (min-width: 600px) {
   .heading__adress {
     padding-left: 1%;
+    width: auto;
   }
 }
 .heading__content {
