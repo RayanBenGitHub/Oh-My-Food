@@ -707,7 +707,7 @@ body {
 @media all and (min-width: 600px) {
   .menufav {
     margin-top: 0%;
-    margin-left: 7%;
+    margin-left: 3%;
     float: none;
   }
 }
