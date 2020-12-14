@@ -633,6 +633,7 @@ body {
   margin-top: 8%;
   font-family: "Shrikhand", cursive;
   font-size: 1.8rem;
+  animation: choix 1500ms;
 }
 @media all and (min-width: 600px) {
   .menu__h2 {
@@ -656,6 +657,7 @@ body {
   border-bottom-width: 10%;
   width: 10%;
   font-size: 1rem;
+  animation: choix 1500ms;
 }
 @media all and (min-width: 600px) {
   .menu__h3 {

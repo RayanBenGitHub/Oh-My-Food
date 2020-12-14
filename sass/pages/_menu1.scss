@@ -53,7 +53,6 @@ body {
     border-bottom-right-radius: 0px;
     margin-top: 80%;
     width: 100%;
-
     @media all and (min-width: 600px) {
         margin-top: 20%;
     }
@@ -64,7 +63,7 @@ body {
         margin-top: 8%;
         @include Shrikhand;
         font-size: 1.8rem;
-
+        animation: choix 1500ms;
         @media all and (min-width: 600px) {
             font-size: 2rem;
             text-align: center;
@@ -88,21 +87,19 @@ body {
         border-bottom-width: 10%;
         width: 10%;
         font-size: 1rem;
-
+        animation: choix 1500ms;
         @media all and (min-width: 600px) {
             font-size: 1.5rem;
             width: 50px;
             padding-bottom: 0%;
         }
     }
-
     &__btn {
         @include menu_btn;
         padding-left: 3%;
         display: flex;
         justify-content: flex-start;
         animation: choix 1500ms;
-
         &__details {
             flex-direction: column;
             text-overflow: ellipsis;
@@ -113,9 +110,7 @@ body {
             padding: 2%;
             padding-left: 0%;
         }
-
     }
-
     &__order__btn {
         @include purple_btn;
         width: 40%;
@@ -124,7 +119,6 @@ body {
         margin-left: 26%;
         text-align: center;
         font-size: 1rem;
-
         @media all and (min-width: 600px) {
             height: 5%;
             font-size: 1.5rem;
