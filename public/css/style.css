@@ -23,7 +23,7 @@
   }
   100% {
     transform: scaleX(1);
-    width: 23%;
+    width: 20%;
     transform-origin: right;
   }
 }
