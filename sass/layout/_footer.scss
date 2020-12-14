@@ -6,7 +6,10 @@
         margin-block: 0%;
         font-size: 1.2rem;
     }
-
+    &__content__contact {
+        color: $color-fifth;
+        text-decoration: none;
+    }
     @media all and (min-width: 600px) {
         padding-top: 1%;
         font-size: 0.9rem;
