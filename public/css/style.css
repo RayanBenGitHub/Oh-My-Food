@@ -633,7 +633,7 @@ body {
   margin-top: 8%;
   font-family: "Shrikhand", cursive;
   font-size: 1.8rem;
-  animation: choix 1500ms;
+  animation: choix 3000ms;
 }
 @media all and (min-width: 600px) {
   .menu__h2 {
@@ -657,7 +657,7 @@ body {
   border-bottom-width: 10%;
   width: 10%;
   font-size: 1rem;
-  animation: choix 1500ms;
+  animation: choix 3000ms;
 }
 @media all and (min-width: 600px) {
   .menu__h3 {
@@ -679,7 +679,7 @@ body {
   padding-left: 3%;
   display: flex;
   justify-content: flex-start;
-  animation: choix 1500ms;
+  animation: choix 3000ms;
 }
 @media all and (min-width: 600px) {
   .menu__btn {
