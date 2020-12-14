@@ -681,6 +681,11 @@ body {
   justify-content: flex-start;
   animation: choix 1500ms;
 }
+@media all and (min-width: 600px) {
+  .menu__btn {
+    font-size: 1.1rem;
+  }
+}
 .menu__btn__details {
   flex-direction: column;
   text-overflow: ellipsis;
@@ -759,6 +764,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 1%;
 }
 
 .menufav {

@@ -70,6 +70,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    @media all and (min-width: 600px) {
+        font-size: 1.1rem;
+    }
 }
 
 @mixin checked_btn {
