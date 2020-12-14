@@ -731,7 +731,7 @@ body {
   .menu__order__btn {
     height: 5%;
     font-size: 1.5rem;
-    background-color: #7b3838;
+    background-image: linear-gradient(#7b3838, #7b1010);
     border: 0;
     margin-left: 28%;
   }
