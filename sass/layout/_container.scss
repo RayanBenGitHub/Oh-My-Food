@@ -5,44 +5,52 @@
     position: relative;
     padding-left: 6%;
     padding-top: 4%;
-    @media all and (min-width: 600px){
+
+    @media all and (min-width: 600px) {
         background-image: url(./../../images/leaves-336694_1920.jpg);
         background-size: cover;
         padding-left: 0%;
         align-items: center;
         padding-bottom: 5%;
     }
-    &__title{
-        @media all and (min-width: 600px){
+
+    &__title {
+        @media all and (min-width: 600px) {
             font-size: 2rem;
             text-shadow: 3px 4px 2px darken($color-primary, 40%);
             color: $color-fifth;
         }
     }
-    &__list{
-       &--choose{
-           @include bordures($color-fourth);
-           @include etapes_btn;
-           .options{
-               margin-left: -11%;
-           }
-           @media all and (min-width: 600px){
-               .options{
-                   margin-left: -16%;
-                   margin-right: 7%;
-               }
-           }
-       }
-       &--compose{
-           @include bordures($color-fourth);
-           @include etapes_btn; 
-       }
-       &--taste{
-           @include bordures($color-fourth);
-           @include etapes_btn;
-       }
+
+    &__list {
+        &--choose {
+            @include bordures($color-fourth);
+            @include etapes_btn;
+
+            .options {
+                margin-left: -11%;
+            }
+
+            @media all and (min-width: 600px) {
+                .options {
+                    margin-left: -16%;
+                    margin-right: 7%;
+                }
+            }
+        }
+
+        &--compose {
+            @include bordures($color-fourth);
+            @include etapes_btn;
+        }
+
+        &--taste {
+            @include bordures($color-fourth);
+            @include etapes_btn;
+        }
     }
 }
+
 .circle {
     @include bordures ($color-primary);
     border-radius: 50%;
@@ -56,15 +64,17 @@
     color: lighten($color-fourth, 8%);
     position: absolute;
     left: -10px;
-    @media all and (min-width: 600px){
-    @include bordures (darken($color-primary, 40%));
-    background-color: darken($color-primary, 40%);
+
+    @media all and (min-width: 600px) {
+        @include bordures (darken($color-primary, 40%));
+        background-color: darken($color-primary, 40%);
     }
 }
+
 .options {
     color: darken($color-fourth, 40%);
     margin-left: -20%;
-    margin-right: 6%;  
+    margin-right: 6%;
 }
 
 .restaurants {
@@ -73,15 +83,17 @@
     padding-bottom: 3rem;
     padding-left: 6%;
     padding-right: 6%;
-    @media all and (min-width: 600px){
+
+    @media all and (min-width: 600px) {
         background-image: url(./../../images/wood-591631_1920.jpg);
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding-left: 25%;
-        }
-    &__title{
-        @media all and (min-width: 600px){
+        padding-left: 22%;
+    }
+
+    &__title {
+        @media all and (min-width: 600px) {
             text-align: center;
             font-size: 2rem;
             text-shadow: 3px 3px 1px darken($color-primary, 40%);
@@ -89,56 +101,69 @@
             margin-bottom: 5%;
             margin-left: -25%;
         }
-    }    
-    &__box{
-        &--r1{
+    }
+
+    &__box {
+        &--r1 {
             @include vignette;
-            position: relative;   
+            position: relative;
         }
-        &--r2{
-            @include vignette; 
-            position: relative;  
-            @media all and (min-width: 600px){
+
+        &--r2 {
+            @include vignette;
+            position: relative;
+
+            @media all and (min-width: 600px) {
                 margin-left: 25%;
             }
-            .lien-vignette{
-                @media all and (min-width: 600px){
+
+            .lien-vignette {
+                @media all and (min-width: 600px) {
                     height: 360px;
-                }  
+                }
             }
         }
-        &--r3{
-            @include vignette; 
-        }
-        &--r4{
+
+        &--r3 {
             @include vignette;
-            @media all and (min-width: 600px){
+        }
+
+        &--r4 {
+            @include vignette;
+
+            @media all and (min-width: 600px) {
                 margin-left: 25%;
                 height: 460px;
             }
         }
     }
 }
-.photo_resto{
+
+.photo_resto {
     width: 100%;
 }
-.lien-vignette{
+
+.lien-vignette {
     display: flex;
     align-items: center;
     overflow: hidden;
-    @media all and (max-width: 599px){
-    height: 200px
+
+    @media all and (max-width: 599px) {
+        height: 200px
     }
 }
+
 .bold {
     font-weight: 700;
 }
-figcaption{
+
+figcaption {
     padding-left: 4%;
     padding-top: 3%;
     padding-bottom: 3%;
     position: relative;
 }
+
 .like {
     position: absolute;
     left: 86%;
@@ -148,18 +173,21 @@ figcaption{
     transform: scale(1);
     transition: transform 500ms;
     cursor: pointer;
+
     &:hover {
         color: $color-primary;
         transform: scale(1.01);
         font-weight: 700;
     }
 }
-.nouveauté{
-    @include nouveau; 
+
+.nouveauté {
+    @include nouveau;
     position: absolute;
     top: 5%;
     left: 68%;
 }
+
 /*
 #resto_flex {
      @media all and (min-width: 600px){

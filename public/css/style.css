@@ -1,4 +1,56 @@
 @charset "UTF-8";
+@keyframes couleur-btn {
+  0% {
+    background-color: #9356DC;
+  }
+  100% {
+    background-color: #FF79DA;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes validation {
+  0% {
+    transform: scaleX(0);
+    width: 0%;
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(1);
+    width: 23%;
+    transform-origin: right;
+  }
+}
+@keyframes choix {
+  0% {
+    transform: translateY(50%);
+    opacity: 0.1;
+  }
+  17% {
+    transform: translateY(35%);
+    opacity: 0.3;
+  }
+  24% {
+    transform: translateY(25%);
+    opacity: 0.6;
+  }
+  46% {
+    transform: translateY(14%);
+    opacity: 0.8;
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 @keyframes déroulement {
   from {
     transform: translateY(0%);
@@ -7,7 +59,9 @@
     transform: translateY(100%);
   }
 }
-header, body, footer {
+header,
+body,
+footer {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", serif, sans-serif;
@@ -78,9 +132,8 @@ header, body, footer {
   }
 }
 .heading__content__btn {
-  border: 1px solid #FF79DA;
   box-shadow: 0px 5px 5px #dbdbdb;
-  background-color: #FF79DA;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   color: #efefef;
   font-size: 0.9rem;
   border-radius: 50px;
@@ -309,7 +362,7 @@ header, body, footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-left: 25%;
+    padding-left: 22%;
   }
 }
 @media all and (min-width: 600px) {
@@ -494,31 +547,20 @@ figcaption {
 }
 @media all and (min-width: 600px) {
   .footer {
-    padding: 0%;
     padding-top: 1%;
     font-size: 0.9rem;
-    text-align: center;
-    margin-left: -3%;
+    padding-bottom: 0%;
+    margin-left: -4%;
   }
 }
 
 .fa-utensils {
   padding-right: 4%;
 }
-@media all and (min-width: 600px) {
-  .fa-utensils {
-    padding-right: 1%;
-  }
-}
 
 .fa-hands-helping {
   font-size: 0.8rem;
   padding-right: 3%;
-}
-@media all and (min-width: 600px) {
-  .fa-hands-helping {
-    padding-right: 2%;
-  }
 }
 
 .bloc-page {
@@ -583,7 +625,6 @@ body {
 @media all and (min-width: 600px) {
   .menu {
     margin-top: 20%;
-    /*background-image: url(./../../images/mesh-2697072_1280.png);*/
   }
 }
 .menu__h2 {
@@ -631,25 +672,26 @@ body {
   margin-left: 3%;
   margin-right: 3%;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding-left: 3%;
   display: flex;
   justify-content: flex-start;
-}
-.menu__btn:hover + .checked-btn {
-  transform: scaleX(1);
+  animation: choix 1500ms;
 }
 .menu__btn__details {
   flex-direction: column;
-  width: 100%;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  flex: 1;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
   padding: 2%;
   padding-left: 0%;
 }
 .menu__order__btn {
-  border: 1px solid #FF79DA;
   box-shadow: 0px 5px 5px #dbdbdb;
-  background-color: #FF79DA;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   color: #efefef;
   font-size: 0.9rem;
   border-radius: 50px;
@@ -684,18 +726,37 @@ body {
   }
 }
 
+.menu__btn:hover > .checked-btn .fa-check-circle {
+  display: block;
+  margin: auto;
+  animation: rotation 2000ms;
+}
+
+.menu__btn:hover > .checked-btn {
+  animation: validation 1500ms ease-in-out forwards;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: validation;
+}
+
 .plat {
   font-size: 1.1rem;
 }
 
 .ingredients {
-  font-size: 0.9rem;
-  width: 70%;
+  font-size: 1rem;
 }
 
 .prix {
-  float: right;
-  padding-right: 4%;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menufav {
@@ -719,18 +780,15 @@ body {
 
 .checked-btn {
   width: 0%;
-  background-color: #99E2D0;
-  float: right;
+  color: white;
+  background-color: #99e2d0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  padding: 0%;
-  margin: 0%;
-  overflow: hidden;
-  transform-origin: 100% 50%;
   transform: scaleX(0);
-  transition: transform 1000ms;
 }
 
 .fa-check-circle {

@@ -2,12 +2,14 @@
     width: 100%;
     justify-content: center;
     text-align: center;
-       &__title{
-            @include Shrikhand;
-            margin-block: 0%;
-            font-size: 1.8rem;
-        }   
-    &__adress{
+
+    &__title {
+        @include Shrikhand;
+        margin-block: 0%;
+        font-size: 1.8rem;
+    }
+
+    &__adress {
         @include bordures(lighten($color-fourth, 5%));
         border-top-color: $color-fourth;
         border-top-width: 4px;
@@ -18,12 +20,14 @@
         color: darken($color-fourth, 60%);
         font-size: 0.9rem;
         width: 100%;
-        @media all and (min-width: 600px){
+
+        @media all and (min-width: 600px) {
             padding-left: 1%;
             width: auto;
         }
     }
-    &__content{
+
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -31,7 +35,8 @@
         padding-bottom: 10%;
         padding-left: 12%;
         padding-right: 12%;
-        @media all and (min-width: 600px){
+
+        @media all and (min-width: 600px) {
             padding-left: 0%;
             padding-right: 0%;
             padding-top: 5%;
@@ -41,31 +46,36 @@
             background-position-x: 50%;
             background-position-y: 90%;
         }
-        &__description{
+
+        &__description {
             color: darken($color-fourth, 45%);
-            @media all and (min-width: 600px){
+
+            @media all and (min-width: 600px) {
                 padding-bottom: 5%;
             }
         }
-        &__btn{
-            @include bordures($color-secondary);
+
+        &__btn {
             @include purple_btn;
-            @media all and (min-width: 600px){
+
+            @media all and (min-width: 600px) {
                 margin-top: 7%;
             }
-        }  
+        }
     }
 }
-.explore-link{
+
+.explore-link {
     color: lighten($color-fourth, 10%);
     text-decoration: none;
 }
 
-.fa-map-marker-alt{
+.fa-map-marker-alt {
     padding-right: 5%;
     margin-left: -7%;
-    @media all and (min-width: 600px){
-    padding-right: 2%;
-    margin-left: -3%;
+
+    @media all and (min-width: 600px) {
+        padding-right: 2%;
+        margin-left: -3%;
     }
 }

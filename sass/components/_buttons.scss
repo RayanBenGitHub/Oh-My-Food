@@ -1,20 +1,22 @@
 @mixin purple_btn {
     box-shadow: 0px 5px 5px $color-fourth;
-    background-color: $color-secondary;
+    background-image: linear-gradient($color-secondary, $color-primary);
     color: lighten($color-fourth, 8%);
     font-size: 0.9rem;
     border-radius: 50px;
     width: 210px;
-    padding: 0.9rem;   
+    padding: 0.9rem;
     box-shadow: 0px 2px 5px 1px rgba(14, 12, 12, 0.20);
     transform: scale(1);
     transition: transform 450ms;
-        &:hover{
-            transform: scale(1.15);
-            box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.40);
-            @media all and (min-width: 600px){
-                cursor: pointer;
-            }
+
+    &:hover {
+        transform: scale(1.15);
+        box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.40);
+
+        @media all and (min-width: 600px) {
+            cursor: pointer;
+        }
     }
 }
 
@@ -29,27 +31,31 @@
     text-align: center;
     box-shadow: 0px 2px 5px 1px rgba(14, 12, 12, 0.20);
     transform: scale(1);
-    transition: transform 450ms , background-color 300ms 150ms;
-    @media all and (min-width: 600px){
+    transition: transform 450ms, background-color 300ms 150ms;
+
+    @media all and (min-width: 600px) {
         width: 400px;
         margin: 0%;
         margin-bottom: 2%;
         padding-left: 3%;
         padding-right: 0%;
         box-shadow: 0px 2px 2px 1px darken($color-primary, 40%);
-        
+
     }
-    &:hover{
+
+    &:hover {
         transform: scale(1.02);
         background-color: lighten($color-primary, 30%);
         box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.30);
-        @media all and (min-width: 600px){
+
+        @media all and (min-width: 600px) {
             box-shadow: 0px 4px 5px 1px darken($color-primary, 50%);
             cursor: pointer;
         }
-        .options{
+
+        .options {
             color: $color-primary;
-            
+
         }
     }
 }
@@ -62,17 +68,19 @@
     margin-left: 3%;
     margin-right: 3%;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 @mixin checked_btn {
     width: 0%;
-    background-color: $color-third;
-    float: right;
+    color: white;
+    background-color: #99e2d0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    padding: 0%;
-    margin: 0%;
-    overflow: hidden;
+    transform: scaleX(0);
 }

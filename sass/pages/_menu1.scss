@@ -1,44 +1,51 @@
-.fa-arrow-left{
+.fa-arrow-left {
     font-size: 1.5rem;
     color: black;
     position: absolute;
     top: 27%;
     left: 10px;
 }
-.fixedheading{
+
+.fixedheading {
     position: fixed;
     width: 100%;
     background-color: $color-fifth;
-    &__maintitle{
-    position: relative;
+
+    &__maintitle {
+        position: relative;
     }
-    .main-title{
+
+    .main-title {
         @include Shrikhand;
         margin-block: 0%;
         text-align: center;
         font-size: 1.8rem;
     }
 }
-.nomargin{
-    margin: 0%;
-}
-body{
+
+.nomargin {
     margin: 0%;
 }
 
-.main{
+body {
+    margin: 0%;
+}
+
+.main {
     background-image: url(./../../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-position: top;
     background-size: 131%;
     background-repeat: no-repeat;
-    @media all and (min-width: 600px){
+
+    @media all and (min-width: 600px) {
         background-position-x: 50%;
         background-size: 35%;
         background-color: #7b3838;
         background-position-y: 0%;
     }
 }
-.menu{
+
+.menu {
     background-color: lighten($color-fourth, 5%);
     @include bordures(lighten($color-fourth, 5%));
     border-radius: 35px;
@@ -46,28 +53,32 @@ body{
     border-bottom-right-radius: 0px;
     margin-top: 80%;
     width: 100%;
-    @media all and (min-width: 600px){
+
+    @media all and (min-width: 600px) {
         margin-top: 20%;
-        /*background-image: url(./../../images/mesh-2697072_1280.png);*/
     }
-    &__h2{
+
+    &__h2 {
         margin-left: 4%;
         margin-right: 4%;
         margin-top: 8%;
         @include Shrikhand;
         font-size: 1.8rem;
-        @media all and (min-width: 600px){
+
+        @media all and (min-width: 600px) {
             font-size: 2rem;
             text-align: center;
         }
     }
-    &__width{
-        @media all and (min-width: 600px){
-        width: 60%;
-        margin-left: 19%;
+
+    &__width {
+        @media all and (min-width: 600px) {
+            width: 60%;
+            margin-left: 19%;
         }
     }
-    &__h3{
+
+    &__h3 {
         margin-left: 4%;
         margin-right: 4%;
         margin-top: 5%;
@@ -77,33 +88,35 @@ body{
         border-bottom-width: 10%;
         width: 10%;
         font-size: 1rem;
-        @media all and (min-width: 600px){
+
+        @media all and (min-width: 600px) {
             font-size: 1.5rem;
             width: 50px;
             padding-bottom: 0%;
         }
     }
-    &__btn{
+
+    &__btn {
         @include menu_btn;
         padding-left: 3%;
         display: flex;
         justify-content: flex-start;
-        &:hover {
-            & + .checked-btn {
-                transform: scaleX(1);
-                }
-        }
-        &__details{
+        animation: choix 1500ms;
+
+        &__details {
             flex-direction: column;
-            width: 100%;
-            white-space: nowrap;
             text-overflow: ellipsis;
+            flex: 1;
+            overflow: hidden;
+            display: block;
+            white-space: nowrap;
             padding: 2%;
             padding-left: 0%;
         }
+
     }
-    &__order__btn{
-        @include bordures($color-secondary);
+
+    &__order__btn {
         @include purple_btn;
         width: 40%;
         margin-top: 15%;
@@ -111,7 +124,8 @@ body{
         margin-left: 26%;
         text-align: center;
         font-size: 1rem;
-        @media all and (min-width: 600px){
+
+        @media all and (min-width: 600px) {
             height: 5%;
             font-size: 1.5rem;
             background-color: #7b3838;
@@ -120,55 +134,82 @@ body{
         }
     }
 }
-.plat{
+
+.menu__btn:hover>.checked-btn .fa-check-circle {
+    display: block;
+    margin: auto;
+    animation: rotation 2000ms;
+}
+
+.menu__btn:hover>.checked-btn {
+    animation: validation 1500ms ease-in-out forwards;
+    animation-duration: 1500ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: validation;
+}
+
+.plat {
     font-size: 1.1rem;
 }
-.ingredients{
-    font-size: 0.9rem;
-    width: 70%;
+
+.ingredients {
+    font-size: 1rem;
 }
-.prix{
-    float: right;
-    padding-right: 4%;
+
+.prix {
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.menufav{
+
+.menufav {
     float: right;
     margin-top: 2.5%;
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.603);
-    @media all and (min-width: 600px){
+
+    @media all and (min-width: 600px) {
         margin-top: 0%;
         margin-left: 3%;
         float: none;
     }
+
     &:hover {
         color: $color-primary;
         transform: scale(1.01);
         font-weight: 700;
     }
 }
-.checked-btn{
+
+.checked-btn {
     @include checked_btn;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform 1000ms; 
 }
-.fa-check-circle{
+
+.fa-check-circle {
     color: $color-third;
     background-color: $color-fifth;
     border-radius: 50%;
 }
+
 .fa-utensils {
     padding-right: 4%;
-    @media all and (min-width: 600px){
-    padding-right: 1%;
+
+    @media all and (min-width: 600px) {
+        padding-right: 1%;
     }
 }
 
-.fa-hands-helping{
+.fa-hands-helping {
     font-size: 0.8rem;
     padding-right: 3%;
-    @media all and (min-width: 600px){
-    padding-right: 1%;
+
+    @media all and (min-width: 600px) {
+        padding-right: 1%;
     }
 }

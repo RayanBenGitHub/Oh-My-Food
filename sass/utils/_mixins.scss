@@ -1,13 +1,13 @@
-@mixin bordures($color){
-    border: 1px solid $color;   
+@mixin bordures($color) {
+    border: 1px solid $color;
 }
 
-@mixin cercle($color){
+@mixin cercle($color) {
     border: 1px solid $color;
     border-radius: 50%;
 }
 
-@mixin vignette{
+@mixin vignette {
     border-radius: 5%;
     background-color: $color-fifth;
     box-shadow: 0px 2px 5px 1px rgba(205, 197, 197, 0.61);
@@ -15,16 +15,17 @@
     overflow: hidden;
     margin: 0%;
     margin-bottom: 1rem;
-    @media all and (min-width: 600px){
+
+    @media all and (min-width: 600px) {
         height: 450px;
         width: 550px;
         box-shadow: 0px 2px 5px 1px rgba(32, 28, 28, 0.356);
         margin-bottom: 6%;
-        
-    }
-}   
 
-@mixin nouveau{
+    }
+}
+
+@mixin nouveau {
     background-color: $color-third;
     color: darken($color-third, 38%);
     border-radius: 3px;
@@ -32,14 +33,15 @@
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    font-weight: 700;  
-    @media all and (min-width: 600px){
+    font-weight: 700;
+
+    @media all and (min-width: 600px) {
         padding-left: 30px;
         padding-right: 30px;
     }
 }
 
-@mixin pied{
+@mixin pied {
     background-color: darken($color-fourth, $amount: 65);
     color: $color-fifth;
     padding-left: 6%;
@@ -52,6 +54,7 @@
     from {
         transform: translateY(0%);
     }
+
     to {
         transform: translateY(100%);
     }

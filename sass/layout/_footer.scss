@@ -1,28 +1,25 @@
-.footer{
+.footer {
     @include pied;
-    &__title{
+
+    &__title {
         @include Shrikhand;
         margin-block: 0%;
         font-size: 1.2rem;
     }
-    @media all and (min-width: 600px){
-        padding: 0%;
+
+    @media all and (min-width: 600px) {
         padding-top: 1%;
         font-size: 0.9rem;
-        text-align: center;
-        margin-left: -3%;
+        padding-bottom: 0%;
+        margin-left: -4%;
     }
 }
+
 .fa-utensils {
     padding-right: 4%;
-    @media all and (min-width: 600px){
-        padding-right: 1%;
-    }
 }
-.fa-hands-helping{
+
+.fa-hands-helping {
     font-size: 0.8rem;
     padding-right: 3%;
-    @media all and (min-width: 600px){
-        padding-right: 2%;
-    }
 }
