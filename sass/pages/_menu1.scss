@@ -6,23 +6,6 @@
     left: 10px;
 }
 
-.fixedheading {
-    position: fixed;
-    width: 100%;
-    background-color: $color-fifth;
-
-    &__maintitle {
-        position: relative;
-    }
-
-    .main-title {
-        @include Shrikhand;
-        margin-block: 0%;
-        text-align: center;
-        font-size: 1.8rem;
-    }
-}
-
 .nomargin {
     margin: 0%;
 }
@@ -122,9 +105,12 @@ body {
         @media all and (min-width: 600px) {
             height: 5%;
             font-size: 1.5rem;
-            background-image: linear-gradient(#7b3838, #7b1010);
+            background-image: linear-gradient(173deg,#7b3838 ,#7b1010 );
             border: 0;
             margin-left: 28%;
+            &:hover{
+                background-image: linear-gradient(173deg,#7b3838de ,#7b1010de );
+            }
         }
     }
 }

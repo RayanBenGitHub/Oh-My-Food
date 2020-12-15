@@ -79,3 +79,20 @@
         margin-left: -3%;
     }
 }
+/* Header des pages annexes */
+.fixedheading {
+    position: fixed;
+    width: 100%;
+    background-color: $color-fifth;
+
+    &__maintitle {
+        position: relative;
+    }
+
+    .main-title {
+        @include Shrikhand;
+        margin-block: 0%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}

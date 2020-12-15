@@ -133,7 +133,7 @@ footer {
 }
 .heading__content__btn {
   box-shadow: 0px 5px 5px #dbdbdb;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(173deg, #FF79DA, #9356DC);
   color: #efefef;
   font-size: 0.9rem;
   border-radius: 50px;
@@ -146,6 +146,7 @@ footer {
 .heading__content__btn:hover {
   transform: scale(1.15);
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
+  background-image: linear-gradient(173deg, #ff79d9e0, #9256dce0);
 }
 @media all and (min-width: 600px) {
   .heading__content__btn:hover {
@@ -172,6 +173,22 @@ footer {
     padding-right: 2%;
     margin-left: -3%;
   }
+}
+
+/* Header des pages annexes */
+.fixedheading {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+.fixedheading__maintitle {
+  position: relative;
+}
+.fixedheading .main-title {
+  font-family: "Shrikhand", cursive;
+  margin-block: 0%;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .fonctionnement {
@@ -579,21 +596,6 @@ figcaption {
   left: 10px;
 }
 
-.fixedheading {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-}
-.fixedheading__maintitle {
-  position: relative;
-}
-.fixedheading .main-title {
-  font-family: "Shrikhand", cursive;
-  margin-block: 0%;
-  text-align: center;
-  font-size: 1.8rem;
-}
-
 .nomargin {
   margin: 0%;
 }
@@ -702,7 +704,7 @@ body {
 }
 .menu__order__btn {
   box-shadow: 0px 5px 5px #dbdbdb;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(173deg, #FF79DA, #9356DC);
   color: #efefef;
   font-size: 0.9rem;
   border-radius: 50px;
@@ -721,6 +723,7 @@ body {
 .menu__order__btn:hover {
   transform: scale(1.15);
   box-shadow: 0px 3px 5px 1px rgba(14, 12, 12, 0.4);
+  background-image: linear-gradient(173deg, #ff79d9e0, #9256dce0);
 }
 @media all and (min-width: 600px) {
   .menu__order__btn:hover {
@@ -731,9 +734,12 @@ body {
   .menu__order__btn {
     height: 5%;
     font-size: 1.5rem;
-    background-image: linear-gradient(#7b3838, #7b1010);
+    background-image: linear-gradient(173deg, #7b3838, #7b1010);
     border: 0;
     margin-left: 28%;
+  }
+  .menu__order__btn:hover {
+    background-image: linear-gradient(173deg, #7b3838de, #7b1010de);
   }
 }
 
