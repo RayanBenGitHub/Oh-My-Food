@@ -19,6 +19,7 @@ body {
     background-position: top;
     background-size: 131%;
     background-repeat: no-repeat;
+    background-color: lighten($color-fourth, 5%);
 
     @media all and (min-width: 600px) {
         background-position-x: 50%;
@@ -30,7 +31,6 @@ body {
 
 .menu {
     background-color: lighten($color-fourth, 5%);
-    @include bordures(lighten($color-fourth, 5%));
     border-radius: 35px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -43,7 +43,7 @@ body {
     &__h2 {
         margin-left: 4%;
         margin-right: 4%;
-        margin-top: 8%;
+        padding-top: 8%;
         @include Shrikhand;
         font-size: 1.8rem;
         animation: choix 3000ms;
@@ -67,7 +67,6 @@ body {
         padding-bottom: 1%;
         text-transform: uppercase;
         border-bottom: 3px solid $color-third;
-        border-bottom-width: 10%;
         width: 10%;
         font-size: 1rem;
         animation: choix 3000ms;

@@ -3,8 +3,8 @@
 
     &__title {
         @include Shrikhand;
-        margin-block: 0%;
         font-size: 1.2rem;
+        margin: 0%;
     }
     &__content__contact {
         color: $color-fifth;

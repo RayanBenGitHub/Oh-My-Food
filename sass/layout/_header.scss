@@ -5,13 +5,13 @@
 
     &__title {
         @include Shrikhand;
-        margin-block: 0%;
         font-size: 1.8rem;
+        margin: 0%
     }
 
     &__adress {
-        @include bordures(lighten($color-fourth, 5%));
-        border-top-color: $color-fourth;
+        @include bordures($color-fourth);
+        border-width: 0px;
         border-top-width: 4px;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -79,7 +79,7 @@
         margin-left: -3%;
     }
 }
-/* Header des pages annexes */
+/* Header menus*/
 .fixedheading {
     position: fixed;
     width: 100%;
@@ -91,8 +91,8 @@
 
     .main-title {
         @include Shrikhand;
-        margin-block: 0%;
         text-align: center;
         font-size: 1.8rem;
+        margin: 0%;
     }
 }
