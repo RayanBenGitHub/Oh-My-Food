@@ -553,14 +553,14 @@ figcaption {
   padding-top: 6%;
   padding-bottom: 4%;
 }
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
 .footer__title {
   font-family: "Shrikhand", cursive;
   font-size: 1.2rem;
   margin: 0%;
-}
-.footer__content__contact {
-  color: #fff;
-  text-decoration: none;
 }
 @media screen and (min-width: 600px) {
   .footer {

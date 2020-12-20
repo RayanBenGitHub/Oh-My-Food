@@ -1,15 +1,14 @@
 .footer {
     @include pied;
+    a{
+    color: $color-fifth;
+    text-decoration: none;
+    }
 
     &__title {
         @include Shrikhand;
         font-size: 1.2rem;
         margin: 0%;
-    }
-
-    &__content__contact {
-        color: $color-fifth;
-        text-decoration: none;
     }
 
     @media screen and (min-width: 600px) {
