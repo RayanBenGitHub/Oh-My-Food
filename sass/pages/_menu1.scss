@@ -118,12 +118,12 @@ main {
 .menu__btn:hover>.checked-btn .fa-check-circle {
     display: block;
     margin: auto;
-    animation: rotation 2000ms;
+    animation: rotation 500ms;
 }
 
 .menu__btn:hover>.checked-btn {
-    animation: validation 1500ms ease-in-out forwards;
-    animation-duration: 1500ms;
+    animation: validation 500ms ease-in-out forwards;
+    animation-duration: 500ms;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-iteration-count: 1;
