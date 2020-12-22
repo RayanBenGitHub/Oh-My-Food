@@ -118,7 +118,8 @@ main {
 .menu__btn:hover>.checked-btn .fa-check-circle {
     display: block;
     margin: auto;
-    animation: rotation 500ms;
+    animation: rotation 600ms;
+    animation-delay: 300ms;
 }
 
 .menu__btn:hover>.checked-btn {
